@@ -14,4 +14,4 @@ setup:
 
 # target: provision-stage - Actually provision stage instances through Ansible Tower.
 ansiblify:
-	ansible-playbook ansiblify.yml --connection=local
+	ansible-playbook -i ansiblify-hosts ansiblify.yml --connection=local --ask-become-pass

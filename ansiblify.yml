@@ -1,3 +1,7 @@
 ---
 - name: Ansiblify your development environment!
-  hosts: localhost
+  hosts: ansiblify
+
+  roles:
+    - { name: editor, when: editor_install }
+

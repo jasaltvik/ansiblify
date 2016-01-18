@@ -1,0 +1,27 @@
+---
+- name: "Ensure chosen build of Sublime Text 3 is downloaded"
+  get_url:
+    url:  "{{ editor_sublime_url }}"
+    dest: "{{ editor_sublime_tmp }}"
+  tags:
+    - editor
+    - sublime
+
+- name: "Ensure Sublime Text 3 is installed"
+  become: yes
+  apt:
+    deb: "{{ editor_sublime_tmp }}"
+  tags:
+    - editor
+    - sublime
+
+- name: "Ensure sublime-text-3 .config changes are copied if applicable"
+  copy:
+    src:  "{{ editor_sublime_conf_dir }}"
+    dest: "{{ user_home_conf_dir }}"
+  when: editor_sublime_conf_dir is defined
+  tags:
+    - editor
+    - sublime
+    - config
+

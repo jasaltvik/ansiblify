@@ -1,0 +1,4 @@
+---
+- include: sublime.yml
+  when: editor_install_sublime
+
