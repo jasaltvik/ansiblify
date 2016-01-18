@@ -1,0 +1,3 @@
+---
+- name: Ansiblify your development environment!
+  hosts: localhost
