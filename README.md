@@ -1,7 +1,7 @@
 # ansiblify
 
-This is an opiniated attempt to make it as easy as possible to set up
-my development environment when setting up a new workstation.
+This is an opinionated attempt to make it as easy as possible to set
+up my development environment when setting up a new workstation.
 Currently this should support Debian and Ubuntu based distros, and is
 now used setting up a Linux Mint environment.
 
