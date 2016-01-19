@@ -1,5 +1,8 @@
 ---
 # Sublime
-editor_sublime_arch: "{% if ansible_architecture == 'x86_64' %}amd64{% else %}i386{% endif %}"
-editor_sublime_url:  "https://download.sublimetext.com/sublime-text_build-{{ editor_sublime_build }}_{{ editor_sublime_arch }}.deb"
-editor_sublime_tmp:  "/tmp/sublime-text_build-{{ editor_sublime_build }}_{{ editor_sublime_arch }}.deb"
+editor_sublime_arch:
+  "{% if ansible_architecture == 'x86_64' %}amd64{% else %}i386{% endif %}"
+editor_sublime_url:
+  "https://download.sublimetext.com/sublime-text_build-{{ editor_sublime_build }}_{{ editor_sublime_arch }}.deb"
+editor_sublime_tmp:
+  "/tmp/sublime-text_build-{{ editor_sublime_build }}_{{ editor_sublime_arch }}.deb"

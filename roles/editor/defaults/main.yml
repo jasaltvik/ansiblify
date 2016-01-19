@@ -7,3 +7,6 @@ editor_install_sublime: true
 
 # Sublime
 editor_sublime_build: "3083"
+
+# User home config directory
+user_home_conf_dir: "~/.config/"
