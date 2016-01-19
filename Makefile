@@ -12,6 +12,6 @@ help:
 setup:
 	./initial_setup.sh
 
-# target: provision-stage - Actually provision stage instances through Ansible Tower.
+# target: ansiblify - Run the Ansible playbook to set up your environment
 ansiblify:
-	ansible-playbook ansiblify.yml --connection=local
+	ansible-playbook -i ansiblify-hosts ansiblify.yml --connection=local --ask-become-pass

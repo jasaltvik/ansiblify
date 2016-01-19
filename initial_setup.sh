@@ -32,3 +32,6 @@ printf "\e[30;42mAnsible version information\e[0m\n"
 ansible --version
 printf '\e[30;42mDone\e[0m\n\n'
 
+printf "\e[30;42mCreate local.yml if it doesn't exist\e[0m\n"
+touch group_vars/ansiblify/local.yml
+printf '\e[30;42mDone\e[0m\n\n'

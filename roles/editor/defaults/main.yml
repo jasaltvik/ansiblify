@@ -1,0 +1,12 @@
+---
+# Set this to false when you don't want to install any editors
+editor_install: true
+
+# What editor(s) to install
+editor_install_sublime: true
+
+# Sublime
+editor_sublime_build: "3083"
+
+# User home config directory
+user_home_conf_dir: "~/.config/"
